@@ -1,0 +1,57 @@
+  <html>
+    <head>
+        <title>Hotel Room Booking</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        </head>
+    <body>
+        <form name="myform">
+        <section class="booking_form">
+                <h1 class="title">Hotel Room Booking</h1>
+
+                <div class="container">
+                    <div class="contact-form row">
+
+                        <div class="form-field col-lg-12">
+                            <input id="name" class="input-text" type="text" name="" required>
+                            <label for="name" class="label">Name</label>
+                        </div>
+                        <div class="form-field col-lg-6">
+                            <input id="email" class="input-text" type="email" name="" required>
+                            <label for="email" class="label">Email</label>
+                        </div>
+                        <div class="form-field col-lg-6">
+                            <input id="phone"  pattern="[1-9]{1}[0-9]{9}" maxlenght="10" minlength="10" class="input-text" type="text" name="" required>
+                            <label for="phone" class="label">Contact number</label>
+                        </div>
+                        <div class="form-field col-lg-6">
+                            <input id="adults" class="input-text" type="number" name="" required>
+                            <label for="adults" class="label">Number of Adults</label>
+                        </div>
+                        <div class="form-field col-lg-6">
+                            <input id="children" class="input-text" type="number" name="" required>
+                            <label for="children" class="label">Number of Children</label>
+                        </div>
+                        <div class="form-field col-lg-6">
+                            <input id="checkin" class="input-text" type="text" name="" required>
+                            <label for="checkin" class="label">Check-in Date</label>
+                        </div>
+                        <div class="form-field col-lg-6">
+                            <input id="checkout" class="input-text" type="text" name="" required>
+                            <span class="field-icon"><i class="fas fa-calendar-week"></i></span>
+                            <label for="checkout" class="label">Check-out Date</label>
+                        </div>
+                        <div class="form-field col-lg-12">
+                            <input id="msg" class="input-text" type="textarea" name="">
+                            <label for="msg" class="label">Any special accommodation needs</label>
+                        </div>
+                        <div class="form-field col-lg-12 text-center">
+                            <input class="submit-btn" type="submit" value="confirm your booking" onsubmit="return validate()" action="/submit.php" 
+           method="post">
+                        </div>
+                    </div>
+                </div>
+        </section>        
+    </form>
+    </body>
+</html>
